@@ -7,7 +7,7 @@
 This repo is the week1 assignment of the "Hello, Computer: Unconventional Uses of Voice Technology" course at ITP.  
 The assignment was to create something that takes non-speech input from a person and responds with speech synthesis.  
 
-I decided to create an app that observes the user's face through the computer's camera, and speak about it.
+I decided to create an app that observes the user's face through the computer's camera, and speaks about it.
 
 Here's the [Live Demo on Glitch](https://cuinjune-observer.glitch.me/).
 
