@@ -26,11 +26,13 @@ The observing happens in the following order and logic. In each step, it will sp
 
 After all these conditions are met, the computer will start praising the user for following its requests. (e.g. "You are the best human I've ever seen")
 
-## Thoughts
+## Process & Thoughts
 
 For the face tracking part, I reused the code I've written for the [Face DJ](https://github.com/cuinjune/face-dj) app that I created last semester. It uses the [Tensorflow Facemesh library](https://github.com/tensorflow/tfjs-models/tree/master/facemesh) which I think is pretty accurate and performant. So my work this time was basically implementing the speech part using the face detection data (e.g. face position) that I already had.
 
 The implementation of the speech part ended up having many conditions (over 200 lines) to check what the computer previously said, and what the current observed state is. I'm sure there's a simpler/cleaner way to do the same thing but I didn't spend much time thinking about organizing the structure of the code since it's a small project anyway.
+
+The purpose of this project was to explore Text-To-Speech (TTS) technology and create something fun with it rather than creating something useful. So I hope people to enjoy using the app, and I guess nobody will like to be observed by a computer in a serious manner.
 
 I think an interesting use case of this app would be to help people who are being easily distracted (e.g. ADHD) to stay focused while working in front of the computer since the app will notify the user as soon as the user is not looking at or try to move away from the computer screen for instance.
 
