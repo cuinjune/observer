@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Observer</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Your computer will observe you and speak about it" />
+    <meta name="keywords" content="observer, tts, facemesh" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADs/9EAAAAAAOHr0wBAaQYAxf9zAH24KgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERERERERERERERERERERERERMzMzERERETNFVVQzERETJFVVVUIxETIkVTNVQiMRMiRVA1VCIxETJFVVVUIxEREzRVVUMxEREREzMzMRERERERERERERERERERERERERERERERERERERERERERERH//wAA//8AAP//AAD//wAA+B8AAOAHAADAAwAAgAEAAIABAADAAwAA4AcAAPgfAAD//wAA//8AAP//AAD//wAA"
+        rel="icon" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@1.7.2/dist/tf-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter@1.7.2/dist/tf-converter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/facemesh@0.0.1/dist/facemesh.min.js"></script>
+</head>
+
+<body>
+    <div id="message-wrapper">
+        <h1 id="message"></h1>
+    </div>
+    <div id="canvas-wrapper">
+        <canvas id="output"></canvas>
+        <video id="video" playsinline style="
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        visibility: hidden;
+        width: auto;
+        height: auto;
+        ">
+        </video>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
