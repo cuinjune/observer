@@ -67,7 +67,7 @@ const SAID = {
 
 let saidState = SAID.NOTHING;
 const minSilenceTime = 1000;
-const maxSilenceTime = 3000;
+const maxSilenceTime = 1500;
 let numRepeated = 0;
 
 const LINES = {
@@ -388,7 +388,7 @@ function speak() {
     message.textContent = text;
 
     function respeak() {
-        const silenceTime = random(minSilenceTime, minSilenceTime) + numRepeated * 200;
+        const silenceTime = random(minSilenceTime, maxSilenceTime) + numRepeated * 200;
         setTimeout(speak, silenceTime);
     }
     
